@@ -108,7 +108,7 @@ class SeasonalBot(commands.Bot):
 
     @mock_in_debug(return_value=True)
     async def set_banner(self, url: str) -> bool:
-        """Set the guild's banner to image at `url`."""
+        """Set the guild's banner to image at `url`. test"""
         guild = self.get_guild(Client.guild)
         if guild is None:
             log.info("Failed to get guild instance, aborting asset upload")
